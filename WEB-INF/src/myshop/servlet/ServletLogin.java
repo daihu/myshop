@@ -30,10 +30,10 @@ public class ServletLogin extends HttpServlet {
 		if (username != null && password != null && //用户名密码都不能为空
 				"admin".equals(username) && //用户名是“admin”
 				"111111".equals(password)) { //密码是“111111”
-			response.sendRedirect("/my_shop/maintain/main.jsp"); //重订向用户到功能页面
+			response.sendRedirect("/myshop/maintain/main.jsp"); //重订向用户到功能页面
 			return; //结束判定流程
 		} else {
-			response.sendRedirect("/my_shop/maintain/index.jsp"); //重订向用户到登陆页面
+			response.sendRedirect("/myshop/maintain/index.jsp"); //重订向用户到登陆页面
 			return; //结束判定流程
 		}
 	}
